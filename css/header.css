@@ -1,0 +1,18 @@
+.header {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.header .header__column i {
+  margin-right: 18px;
+}
+.header .header__column i:last-child {
+  margin-right: 0px;
+}

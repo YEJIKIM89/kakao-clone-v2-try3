@@ -1,0 +1,92 @@
+.header__chat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0px;
+  height: 50px;
+}
+
+.chat__date {
+  display: flex;
+  justify-content: center;
+  border-radius: 20%;
+  text-transform: capitalize;
+}
+
+.chat__messages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.message {
+  display: flex;
+  align-items: flex-start;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.message__received {
+  align-self: flex-start;
+}
+
+.message__sent {
+  align-self: flex-end;
+}
+
+.chat__write--container {
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.chat__icon-left {
+  position: absolute;
+  left: 10px;
+}
+
+.chat__icon-right {
+  position: absolute;
+  right: 10px;
+}
+
+.chat__write {
+  margin: 0 auto;
+  bottom: 0px;
+  padding: 20px 60px;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 0;
+  border: none;
+
+  transition: width 0.5s ease-in-out, transform 0.5s ease-in-out,
+    border-radius 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.chat__write:focus {
+  outline: none;
+  width: 80%;
+  transform: translateY(-100px);
+  border-radius: 40px;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
+    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+}
+
+.chat__icon {
+  font-size: 18px;
+  transition: opacity 0.3s ease-in-out;
+}
+.chat__write:focus ~ .chat__icon {
+  opacity: 0;
+}
+
+.chat__write i {
+    font-size: 22px;
+  }
+  
+  .chat__write-column:nth-child(2) {
+    width: 80%;

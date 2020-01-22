@@ -1,0 +1,34 @@
+.main__plusfriend {
+  margin: 15px 0px;
+  border-top: 0.3px solid #c1c1c1;
+  border-bottom: 0.3px solid #c1c1c1;
+  padding: 10px 0px;
+}
+.main .unit1__column {
+  margin-bottom: 10px;
+}
+.main__plusfriend .main__plusfriend-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__plusfriend .main__plusfriend-content i:first-child {
+  background-color: rgb(204, 193, 91);
+  padding: 9px 10px;
+  align-self: center;
+
+  border-radius: 40%;
+}
+
+.main .main__plusfreind-title,
+.main .main__freind-title {
+  margin-bottom: 10px;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.main__plusfriend-content .unit1__column:nth-child(2) {
+  font-size: 12px;
+  opacity: 0.6;
+}

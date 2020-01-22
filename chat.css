@@ -1,0 +1,129 @@
+.header-wrapper {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 5px 0px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+}
+
+.chats-body {
+  padding: 10px 0px;
+  padding-top: 100px;
+}
+.chats-body .header,
+.chats-body .status-bar {
+  padding: 0px 20px;
+}
+
+.chats-body {
+  background-image: url("../images/dot-grid.png");
+  min-height: 100vh;
+}
+.chat__write--contatiner {
+  position: fixed;
+  bottom: 0px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fcfcfc;
+  padding: 0px 20px;
+}
+
+.chat__write {
+  bottom: 0px;
+  width: 100%;
+  padding: 20px 60px;
+  border: none;
+  font-size: 14px;
+}
+
+.chat__icon-left {
+  position: absolute;
+}
+
+.chat__icon-right {
+  position: absolute;
+  right: 10px;
+}
+
+.chat__write:focus {
+  outline: none;
+}
+.chat__write i {
+  font-size: 22px;
+}
+
+.chat__write__column:nth-child(2) {
+  width: 80%;
+}
+.chat__write-column input {
+}
+
+.chat-screen .chat__messages {
+  border-top: 1px solid #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
+  padding-top: 30px;
+}
+
+.chat__messages .chat__timestamp {
+  background-color: white;
+  padding: 5px 10px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  text-transform: uppercase;
+}
+.message {
+  display: flex;
+  align-items: flex-start;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.message .message__content {
+  width: 80%;
+}
+
+.incoming-message {
+  align-self: flex-start;
+}
+.sent-message {
+  align-self: flex-end;
+}
+
+.incoming-message img {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+  .message .message__bubble {
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+      rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+    padding: 10px 20px;
+  }
+  margin-top: 10px;
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.incoming-message .message__bubble {
+  border-bottom-left-radius: 0px;
+  background-image: linear-gradient(to right, #acb6e5, #86fde8);
+}
+
+.sent-message .message__bubble {
+  border-bottom-right-radius: 0px;
+  background-image: linear-gradient(to left, #1c92d2, #f2fcfe);
+}

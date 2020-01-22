@@ -1,0 +1,9 @@
+.main .main__menu-list {
+  padding: 20px 5px;
+}
+
+.main__more-suggestion {
+  margin-left: 10px;
+  font-size: 14px;
+  color: black;
+}
